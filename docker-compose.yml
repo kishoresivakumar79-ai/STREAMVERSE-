@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: streamverse_postgres
+    environment:
+      POSTGRES_USER: streamverse_user
+      POSTGRES_PASSWORD: streamverse_pass
+      POSTGRES_DB: streamverse_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: streamverse_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: streamverse_backend
+    environment:
+      - DATABASE_URL=postgresql://streamverse_user:streamverse_pass@postgres:5432/streamverse_db
+      - REDIS_URL=redis://redis:6379/0
+      - TMDB_API_KEY=${TMDB_API_KEY:-}
+      - DEFAULT_REGION=IN
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: streamverse_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+

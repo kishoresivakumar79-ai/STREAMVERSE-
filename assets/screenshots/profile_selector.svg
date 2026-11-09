@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgProfile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+
+    <clipPath id="avatar1"><rect x="0" y="0" width="130" height="130" rx="12"/></clipPath>
+    <clipPath id="avatar2"><rect x="0" y="0" width="130" height="130" rx="12"/></clipPath>
+    <clipPath id="avatar3"><rect x="0" y="0" width="130" height="130" rx="12"/></clipPath>
+    <clipPath id="avatar4"><rect x="0" y="0" width="130" height="130" rx="12"/></clipPath>
+
+    <filter id="shadowAv">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame Wrapper -->
+  <rect width="1280" height="720" rx="16" fill="url(#bgProfile)" stroke="#2a2a2a" stroke-width="1.5"/>
+
+  <!-- macOS Window Bar -->
+  <rect width="1280" height="45" fill="#181818" stroke="#2a2a2a" stroke-width="1"/>
+  <circle cx="30" cy="22" r="6" fill="#FF5F56"/>
+  <circle cx="50" cy="22" r="6" fill="#FFBD2E"/>
+  <circle cx="70" cy="22" r="6" fill="#27C93F"/>
+  <rect x="380" y="9" width="520" height="26" rx="6" fill="#222222" stroke="#333333" stroke-width="1"/>
+  <text x="640" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#aaaaaa" text-anchor="middle">
+    🔒 https://streamverse.app/switch-profile
+  </text>
+
+  <!-- STREAMVERSE Logo Top Left -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="36" height="36" rx="8" fill="#E50914"/>
+    <text x="18" y="26" font-family="system-ui, sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    <text x="48" y="26" font-family="system-ui, sans-serif" font-size="24" font-weight="900" fill="#E50914" letter-spacing="-1">STREAMVERSE</text>
+  </g>
+
+  <!-- Title: Who's watching? -->
+  <text x="640" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="500" fill="#ffffff" text-anchor="middle">
+    Who's watching?
+  </text>
+  <text x="640" y="265" font-family="system-ui, sans-serif" font-size="14" fill="#888888" text-anchor="middle">
+    Each profile customizes AI recommendations, watch history &amp; universal watchlist
+  </text>
+
+  <!-- Profiles Row Container -->
+  <g transform="translate(230, 310)">
+    <!-- Profile 1: Vijay (Action Fan) -->
+    <g transform="translate(0, 0)" filter="url(#shadowAv)">
+      <g clip-path="url(#avatar1)">
+        <image href="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&amp;h=200&amp;fit=crop&amp;crop=faces" x="0" y="0" width="130" height="130"/>
+      </g>
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="none" stroke="#E50914" stroke-width="2.5"/>
+      <text x="65" y="165" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Vijay</text>
+      <text x="65" y="183" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#E50914" text-anchor="middle">Action &amp; Thrillers</text>
+    </g>
+
+    <!-- Profile 2: Tamil Cinema Fan -->
+    <g transform="translate(180, 0)" filter="url(#shadowAv)">
+      <g clip-path="url(#avatar2)">
+        <image href="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200&amp;h=200&amp;fit=crop&amp;crop=faces" x="0" y="0" width="130" height="130"/>
+      </g>
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="none" stroke="#444444" stroke-width="1.5"/>
+      <text x="65" y="165" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#cccccc" text-anchor="middle">Tamil Cinema</text>
+      <text x="65" y="183" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#888888" text-anchor="middle">Kollywood Fan</text>
+    </g>
+
+    <!-- Profile 3: Binge Watcher -->
+    <g transform="translate(360, 0)" filter="url(#shadowAv)">
+      <g clip-path="url(#avatar3)">
+        <image href="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&amp;h=200&amp;fit=crop&amp;crop=faces" x="0" y="0" width="130" height="130"/>
+      </g>
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="none" stroke="#444444" stroke-width="1.5"/>
+      <text x="65" y="165" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#cccccc" text-anchor="middle">Binge Watcher</text>
+      <text x="65" y="183" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#888888" text-anchor="middle">Sci-Fi &amp; Mystery</text>
+    </g>
+
+    <!-- Profile 4: Kids & Family -->
+    <g transform="translate(540, 0)" filter="url(#shadowAv)">
+      <g clip-path="url(#avatar4)">
+        <image href="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200&amp;h=200&amp;fit=crop&amp;crop=faces" x="0" y="0" width="130" height="130"/>
+      </g>
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="none" stroke="#444444" stroke-width="1.5"/>
+      <rect x="80" y="98" width="45" height="24" rx="4" fill="#F59E0B"/>
+      <text x="102" y="115" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#000000" text-anchor="middle">KIDS</text>
+      <text x="65" y="165" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#cccccc" text-anchor="middle">Kids &amp; Family</text>
+      <text x="65" y="183" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#888888" text-anchor="middle">Animation • U Rated</text>
+    </g>
+
+    <!-- Add Profile -->
+    <g transform="translate(720, 0)">
+      <rect x="0" y="0" width="130" height="130" rx="12" fill="#1e1e1e" stroke="#555555" stroke-dasharray="4 4" stroke-width="2"/>
+      <text x="65" y="78" font-family="system-ui, sans-serif" font-size="38" font-weight="300" fill="#888888" text-anchor="middle">+</text>
+      <text x="65" y="165" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#888888" text-anchor="middle">Add Profile</text>
+    </g>
+  </g>
+
+  <!-- Manage Profiles Button -->
+  <g transform="translate(540, 580)">
+    <rect x="0" y="0" width="200" height="42" rx="4" fill="transparent" stroke="#666666" stroke-width="1.5"/>
+    <text x="100" y="26" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#999999" text-anchor="middle" letter-spacing="2">
+      MANAGE PROFILES
+    </text>
+  </g>
+</svg>
+
